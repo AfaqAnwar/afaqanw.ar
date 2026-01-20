@@ -73,15 +73,16 @@ function Index() {
             className="underline decoration-[#adb5bd] underline-offset-2 hover:decoration-[#343a40]"
           >
             GitHub
-          </a>
-          <span className="font-light"> and </span>
+          </a>{" "}
+          and{" "}
           <a
             target="_blank"
             href="https://www.linkedin.com/in/AfaqAnwar"
             className="underline decoration-[#adb5bd] underline-offset-2 hover:decoration-[#343a40]"
           >
             LinkedIn
-          </a>{" "}
+          </a>
+          .
         </p>
       </section>
     </div>
