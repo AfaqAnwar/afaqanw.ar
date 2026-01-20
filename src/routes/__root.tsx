@@ -22,7 +22,7 @@ const RootLayout = () => (
           </Link>
         </nav>
       </aside>
-      <main className="max-w-4xl text-right sm:pr-10 sm:border-r sm:border-[#dee2e6] sm:order-1 font-sans font-light">
+      <main className="max-w-xl text-right sm:pr-10 sm:border-r sm:border-[#dee2e6] sm:order-1 font-sans font-light">
         <Outlet />
       </main>
     </div>
