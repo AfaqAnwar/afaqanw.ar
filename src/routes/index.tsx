@@ -74,7 +74,7 @@ function Index() {
           >
             GitHub
           </a>
-          <span className="text-[#adb5bd]">, </span>
+          <span className="font-light"> and </span>
           <a
             target="_blank"
             href="https://www.linkedin.com/in/AfaqAnwar"
