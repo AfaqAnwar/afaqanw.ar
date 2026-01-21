@@ -7,7 +7,7 @@ export const Route = createFileRoute("/reflections")({
 function Reflections() {
   return (
     <div>
-      <h1 className="font-normal">Reflections</h1>
+      <h1 className="font-normal text-right">Reflections</h1>
       <div className="block h-10" />
       <section>
         <p className="font-light">To be written.</p>
