@@ -1,35 +1,35 @@
 import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 
 const RootLayout = () => (
-  <>
-    <div className="p-10 flex flex-col sm:flex-row sm:justify-end">
-      <aside className="mb-8 sm:mb-0 sm:pl-10 sm:w-40 sm:order-2 font-serif font-light">
-        <nav className="flex flex-row justify-end gap-2 pb-4 border-b border-[#dee2e6] sm:flex-col sm:border-b-0 sm:pb-0 sm:sticky sm:top-10">
-          <Link
-            to="/"
-            className="text-[#adb5bd] hover:text-[#343a40] [&.active]:text-[#343a40] transition-colors duration-250"
-          >
-            about
-          </Link>
-          <Link
-            to="/reflections"
-            className="text-[#adb5bd] hover:text-[#343a40] [&.active]:text-[#343a40] transition-colors duration-250"
-          >
-            reflections
-          </Link>
-          <Link
-            to="/projects"
-            className="text-[#adb5bd] hover:text-[#343a40] [&.active]:text-[#343a40] transition-colors duration-250"
-          >
-            projects
-          </Link>
-        </nav>
-      </aside>
-      <main className="max-w-xl text-justify sm:pr-10 sm:border-r sm:border-[#dee2e6] sm:order-1 font-sans font-light">
-        <Outlet />
-      </main>
-    </div>
-  </>
+	<>
+		<div className="p-10 flex flex-col sm:flex-row sm:justify-end">
+			<aside className="mb-8 sm:mb-0 sm:pl-10 sm:w-40 sm:order-2 font-serif font-light">
+				<nav className="flex flex-row justify-end gap-2 pb-4 border-b border-[#dee2e6] sm:flex-col sm:border-b-0 sm:pb-0 sm:sticky sm:top-10">
+					<Link
+						to="/"
+						className="text-[#adb5bd] hover:text-[#343a40] [&.active]:text-[#343a40] transition-colors duration-250"
+					>
+						about
+					</Link>
+					<Link
+						to="/reflections"
+						className="text-[#adb5bd] hover:text-[#343a40] [&.active]:text-[#343a40] transition-colors duration-250"
+					>
+						reflections
+					</Link>
+					<Link
+						to="/projects"
+						className="text-[#adb5bd] hover:text-[#343a40] [&.active]:text-[#343a40] transition-colors duration-250"
+					>
+						projects
+					</Link>
+				</nav>
+			</aside>
+			<main className="max-w-xl text-justify sm:pr-10 sm:border-r sm:border-[#dee2e6] sm:order-1 font-sans font-light">
+				<Outlet />
+			</main>
+		</div>
+	</>
 );
 
 export const Route = createRootRoute({ component: RootLayout });
