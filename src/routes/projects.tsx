@@ -12,10 +12,10 @@ function Projects() {
 			<div className="block h-10" />
 			<section>
 				<p className="font-light">
-					Over the past few years I've gotten the opportunity to work alongside and learn
-					from some outstanding engineers. Even though I'm just getting started, the
-					projects I've gotten the opportunity to be a part of have provided priceless
-					experience.
+					Over the past few years I've gotten the opportunity to work alongside
+					and learn from some outstanding engineers. Even though I'm just
+					getting started, the projects I've gotten the opportunity to be a part
+					of have provided priceless experience.
 				</p>
 			</section>
 			<div className="block h-10" />
@@ -38,11 +38,13 @@ function Projects() {
 					>
 						CVS
 					</StyledLink>{" "}
-					as an intern briefly focusing on developing DevOps tooling with Angular.
+					as an intern briefly focusing on developing DevOps tooling with
+					Angular.
 				</p>
 				<div className="block h-2.5" />
 				<p className="font-light">
-					During the start of my full time role I had the opportunity to learn about{" "}
+					During the start of my full time role I had the opportunity to learn
+					about{" "}
 					<StyledLink
 						target="_blank"
 						href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
@@ -54,10 +56,10 @@ function Projects() {
 				</p>
 				<div className="block h-2.5" />
 				<p className="font-light">
-					After my time with the accessibility team, I transitioned to the RxConnect
-					modernization project and began my career in front-end. We are currently
-					rebuilding the RxConnect platform, which is used by pharmacists daily, with
-					React.
+					After my time with the accessibility team, I transitioned to the
+					RxConnect modernization project and began my career in front-end. We
+					are currently rebuilding the RxConnect platform, which is used by
+					pharmacists daily, with React.
 				</p>
 			</section>
 			<div className="block h-10" />

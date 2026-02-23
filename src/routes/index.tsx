@@ -23,19 +23,20 @@ function Index() {
 					with React and TypeScript.
 				</p>
 				<p className="font-light">
-					Alongside web development I've also taken an interest in mobile app development,
-					UX/UI design and low level systems.
+					Alongside web development I've also taken an interest in mobile app
+					development, UX/UI design and low level systems.
 				</p>
 			</section>
 			<div className="block h-10" />
 			<section>
 				<p className="font-light">
-					Since getting my first computer at age 7, I was fascinated with the power within
-					these boxes. At first it was the idea of making my own video games, which then
-					turned into making apps, followed by computer vision and machine learning which
-					really interested me. Eventually, I received my high school diploma from
-					Brooklyn Technical High School in 2019, followed by my BSc degree in Computer
-					Science from New York Institute of Technology in 2023.
+					Since getting my first computer at age 7, I was fascinated with the
+					power within these boxes. At first it was the idea of making my own
+					video games, which then turned into making apps, followed by computer
+					vision and machine learning which really interested me. Eventually, I
+					received my high school diploma from Brooklyn Technical High School in
+					2019, followed by my BSc degree in Computer Science from New York
+					Institute of Technology in 2023.
 				</p>
 			</section>
 			<div className="block h-10" />

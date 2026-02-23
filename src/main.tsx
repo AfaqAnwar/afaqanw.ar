@@ -7,7 +7,7 @@ import "./index.css";
 const router = createRouter({ routeTree });
 
 declare module "@tanstack/react-router" {
-  interface Register {
+	interface Register {
 		router: typeof router;
 	}
 }
@@ -18,6 +18,6 @@ if (!rootElement.innerHTML) {
 	root.render(
 		<StrictMode>
 			<RouterProvider router={router} />
-		</StrictMode>
+		</StrictMode>,
 	);
 }
