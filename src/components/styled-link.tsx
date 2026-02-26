@@ -8,7 +8,7 @@ interface StyledLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 export const StyledLink = ({ href, children, ...props }: StyledLinkProps) => (
 	<a
 		href={href}
-		className="underline decoration-[#adb5bd] underline-offset-2 hover:decoration-[#343a40] transition-colors duration-125"
+		className="underline decoration-muted underline-offset-2 hover:decoration-ink transition-colors duration-125"
 		{...props}
 	>
 		{children}

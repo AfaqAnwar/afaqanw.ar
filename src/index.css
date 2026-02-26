@@ -3,6 +3,9 @@
 @theme {
 	--font-sans: "Jost";
 	--font-serif: "Newsreader";
+	--color-muted: #adb5bd;
+	--color-ink: #343a40;
+	--color-border: #dee2e6;
 }
 
 @layer base {
