@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as ReflectionsRouteImport } from './routes/reflections'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ReflectionsSlugRouteImport } from './routes/reflections.$slug'
 
 const ReflectionsRoute = ReflectionsRouteImport.update({
   id: '/reflections',
@@ -28,35 +29,43 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ReflectionsSlugRoute = ReflectionsSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ReflectionsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/projects': typeof ProjectsRoute
-  '/reflections': typeof ReflectionsRoute
+  '/reflections': typeof ReflectionsRouteWithChildren
+  '/reflections/$slug': typeof ReflectionsSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/projects': typeof ProjectsRoute
-  '/reflections': typeof ReflectionsRoute
+  '/reflections': typeof ReflectionsRouteWithChildren
+  '/reflections/$slug': typeof ReflectionsSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/projects': typeof ProjectsRoute
-  '/reflections': typeof ReflectionsRoute
+  '/reflections': typeof ReflectionsRouteWithChildren
+  '/reflections/$slug': typeof ReflectionsSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/projects' | '/reflections'
+  fullPaths: '/' | '/projects' | '/reflections' | '/reflections/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/projects' | '/reflections'
-  id: '__root__' | '/' | '/projects' | '/reflections'
+  to: '/' | '/projects' | '/reflections' | '/reflections/$slug'
+  id: '__root__' | '/' | '/projects' | '/reflections' | '/reflections/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ProjectsRoute: typeof ProjectsRoute
-  ReflectionsRoute: typeof ReflectionsRoute
+  ReflectionsRoute: typeof ReflectionsRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -82,13 +91,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/reflections/$slug': {
+      id: '/reflections/$slug'
+      path: '/$slug'
+      fullPath: '/reflections/$slug'
+      preLoaderRoute: typeof ReflectionsSlugRouteImport
+      parentRoute: typeof ReflectionsRoute
+    }
   }
 }
+
+interface ReflectionsRouteChildren {
+  ReflectionsSlugRoute: typeof ReflectionsSlugRoute
+}
+
+const ReflectionsRouteChildren: ReflectionsRouteChildren = {
+  ReflectionsSlugRoute: ReflectionsSlugRoute,
+}
+
+const ReflectionsRouteWithChildren = ReflectionsRoute._addFileChildren(
+  ReflectionsRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ProjectsRoute: ProjectsRoute,
-  ReflectionsRoute: ReflectionsRoute,
+  ReflectionsRoute: ReflectionsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

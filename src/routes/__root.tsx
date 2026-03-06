@@ -18,7 +18,7 @@ const RootLayout = () => (
 					</Link>
 				</nav>
 			</aside>
-			<main className="max-w-xl text-justify sm:pr-10 sm:border-r sm:border-border sm:order-1 font-sans font-light">
+			<main className="w-full max-w-xl text-justify sm:pr-10 sm:border-r sm:border-border sm:order-1 font-sans font-light">
 				<Outlet />
 			</main>
 		</div>
