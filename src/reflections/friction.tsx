@@ -19,7 +19,7 @@ export const Friction = () => (
 				Technology didn't create that tendency. It just made it so easy to follow. So much
 				so, that we have forgotten how to push back.
 			</p>
-			<p className="font-light mb-2">
+			<p className="font-light mb-4">
 				I've felt that lately, whether that be through the code I produce or the goals I set
 				for myself. I'm always looking for the way to get the most results, with the least
 				amount of action.
