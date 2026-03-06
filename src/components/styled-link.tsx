@@ -12,5 +12,6 @@ export const StyledLink = ({ href, children, ...props }: StyledLinkProps) => (
 		{...props}
 	>
 		{children}
+		{props.target === "_blank" && <span className="sr-only"> (opens in new tab)</span>}
 	</a>
 );

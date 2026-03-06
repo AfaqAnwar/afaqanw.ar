@@ -35,10 +35,15 @@ function Projects() {
 			</section>
 			<div className="block h-10" />
 			<section>
-				<a target="_blank" href="https://www.cvs.com/" rel="noopener">
+				<a
+					target="_blank"
+					href="https://www.cvs.com/"
+					rel="noopener noreferrer"
+					aria-label="CVS Health (opens in new tab)"
+				>
 					<img
 						src="https://upload.wikimedia.org/wikipedia/commons/8/8e/CVS_Health_logo.svg"
-						alt="CVS Health logo"
+						alt=""
 						width={128}
 						className="brightness-0"
 					/>
@@ -46,7 +51,11 @@ function Projects() {
 				<div className="block h-5" />
 				<p className="font-light">
 					I started at{" "}
-					<StyledLink target="_blank" href="https://www.cvs.com/" rel="noopener">
+					<StyledLink
+						target="_blank"
+						href="https://www.cvs.com/"
+						rel="noopener noreferrer"
+					>
 						CVS
 					</StyledLink>{" "}
 					as an intern briefly focusing on developing DevOps tooling with Angular.
@@ -57,7 +66,7 @@ function Projects() {
 					<StyledLink
 						target="_blank"
 						href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						accessibility
 					</StyledLink>{" "}
@@ -77,7 +86,11 @@ function Projects() {
 			<section>
 				<p className="font-light">
 					Some of my best personal projects (which can be found on{" "}
-					<StyledLink target="_blank" href="https://github.com/AfaqAnwar" rel="noopener">
+					<StyledLink
+						target="_blank"
+						href="https://github.com/AfaqAnwar"
+						rel="noopener noreferrer"
+					>
 						GitHub
 					</StyledLink>
 					{")"}

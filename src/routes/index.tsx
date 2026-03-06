@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
 	component: Index,
 });
 
-const linkStyle =
+const inlineLinkStyle =
 	"underline decoration-muted underline-offset-2 hover:decoration-ink transition-colors duration-125";
 
 function Index() {
@@ -16,7 +16,11 @@ function Index() {
 			<section>
 				<p className="font-light">
 					I'm a front-end software engineer working at{" "}
-					<StyledLink target="_blank" href="https://www.cvs.com/" rel="noopener">
+					<StyledLink
+						target="_blank"
+						href="https://www.cvs.com/"
+						rel="noopener noreferrer"
+					>
 						CVS
 					</StyledLink>{" "}
 					with React and TypeScript.
@@ -41,28 +45,36 @@ function Index() {
 			<section>
 				<p className="font-light">
 					If you want to know more about me, check out{" "}
-					<Link to="/reflections" className={linkStyle}>
+					<Link to="/reflections" className={inlineLinkStyle}>
 						reflections
 					</Link>{" "}
 					<span className="text-muted">/</span>{" "}
-					<Link to="/projects" className={linkStyle}>
+					<Link to="/projects" className={inlineLinkStyle}>
 						projects
 					</Link>{" "}
 				</p>
 				<p className="font-light">
 					or find me on{" "}
-					<StyledLink target="_blank" href="https://www.x.com/afaqanw" rel="noopener">
+					<StyledLink
+						target="_blank"
+						href="https://www.x.com/afaqanw"
+						rel="noopener noreferrer"
+					>
 						X
 					</StyledLink>
 					<span className="text-muted">, </span>
-					<StyledLink target="_blank" href="https://github.com/AfaqAnwar" rel="noopener">
+					<StyledLink
+						target="_blank"
+						href="https://github.com/AfaqAnwar"
+						rel="noopener noreferrer"
+					>
 						GitHub
 					</StyledLink>{" "}
 					and{" "}
 					<StyledLink
 						target="_blank"
 						href="https://www.linkedin.com/in/AfaqAnwar"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						LinkedIn
 					</StyledLink>

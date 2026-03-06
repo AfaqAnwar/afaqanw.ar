@@ -12,6 +12,11 @@ interface Reflection {
 
 const reflections: Reflection[] = [{ title: "Friction", slug: "friction", date: "2026-03-06" }];
 
+const formatDate = (iso: string) => {
+	const [yyyy, mm, dd] = iso.split("-");
+	return `${mm}-${dd}-${yyyy}`;
+};
+
 function Reflections() {
 	const childMatches = useChildMatches();
 	const isViewingPost = childMatches.length > 0;
@@ -35,7 +40,9 @@ function Reflections() {
 							>
 								<span className="shrink-0">{title}</span>
 								<span className="flex-1 border-b border-dashed" />
-								<span className="text-sm shrink-0">{date}</span>
+								<time dateTime={date} className="text-sm shrink-0">
+									{formatDate(date)}
+								</time>
 							</Link>
 						</li>
 					))}
