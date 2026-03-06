@@ -38,13 +38,13 @@ function Reflections() {
 								params={{ slug }}
 								className="group flex items-baseline gap-2 w-full font-light transition-colors duration-250"
 							>
-								<span className="shrink-0 text-ink sm:group-hover:text-ink-dark">
+								<span className="shrink-0 text-ink sm:text-ink-soft sm:group-hover:text-ink transition-colors duration-250">
 									{title}
 								</span>
 								<span className="flex-1 border-b border-dashed border-muted sm:group-hover:border-ink transition-colors duration-250" />
 								<time
 									dateTime={date}
-									className="text-sm shrink-0 text-muted sm:group-hover:text-ink"
+									className="text-sm shrink-0 text-muted sm:group-hover:text-ink transition-colors duration-250"
 								>
 									{formatDate(date)}
 								</time>
