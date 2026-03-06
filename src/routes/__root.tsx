@@ -8,13 +8,13 @@ const RootLayout = () => {
 		<div className="p-10 flex flex-col sm:flex-row sm:justify-end">
 			<a
 				href="#main-content"
-				className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-3 focus:py-1 focus:bg-[#fcfcfc] focus:text-ink font-serif font-light"
+				className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-3 focus:py-1 focus:bg-[#fcfcfc] focus:text-ink font-serif font-light italic"
 			>
 				Skip to main content
 			</a>
 			<aside
 				aria-label="Site navigation"
-				className="mb-8 sm:mb-0 sm:pl-10 sm:w-40 sm:order-2 font-serif font-light"
+				className="mb-8 sm:mb-0 sm:pl-10 sm:w-40 sm:order-2 font-serif font-light italic"
 			>
 				<nav
 					aria-label="Main navigation"
