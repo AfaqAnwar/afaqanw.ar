@@ -26,9 +26,8 @@ export const Friction = () => (
 			</p>
 			<p className="font-light mb-6 text-center">Read that again.</p>
 			<p className="font-light mb-8">
-				I want to get the <span className="border-b border-muted">most</span> results, with
-				the <span className="border-b border-muted">least </span>
-				amount of action.
+				I want to get the <span className="underline decoration-muted">most</span> results,
+				with the <span className="underline decoration-muted">least</span> amount of action.
 			</p>
 			<p className="font-light mb-4">
 				Friction is the barrier, the marker, the indication that you are active, present and

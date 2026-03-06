@@ -41,12 +41,7 @@ function Projects() {
 					rel="noopener noreferrer"
 					aria-label="CVS Health (opens in new tab)"
 				>
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/8/8e/CVS_Health_logo.svg"
-						alt=""
-						width={128}
-						className="brightness-0"
-					/>
+					<img src="/cvshealthlogo.svg" alt="" width={128} className="brightness-0" />
 				</a>
 				<div className="block h-5" />
 				<p className="font-light">
