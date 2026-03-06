@@ -36,11 +36,16 @@ function Reflections() {
 							<Link
 								to="/reflections/$slug"
 								params={{ slug }}
-								className="flex items-baseline gap-2 w-full font-light text-ink sm:text-muted hover:text-ink transition-colors duration-250"
+								className="group flex items-baseline gap-2 w-full font-light transition-colors duration-250"
 							>
-								<span className="shrink-0">{title}</span>
-								<span className="flex-1 border-b border-dashed" />
-								<time dateTime={date} className="text-sm shrink-0">
+								<span className="shrink-0 text-ink sm:group-hover:text-ink-dark">
+									{title}
+								</span>
+								<span className="flex-1 border-b border-dashed border-muted sm:group-hover:border-ink transition-colors duration-250" />
+								<time
+									dateTime={date}
+									className="text-sm shrink-0 text-muted sm:group-hover:text-ink"
+								>
 									{formatDate(date)}
 								</time>
 							</Link>
