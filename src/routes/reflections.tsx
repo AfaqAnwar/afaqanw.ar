@@ -31,7 +31,7 @@ function Reflections() {
 							<Link
 								to="/reflections/$slug"
 								params={{ slug }}
-								className="flex items-baseline gap-2 w-full font-light text-muted hover:text-ink transition-colors duration-250 "
+								className="flex items-baseline gap-2 w-full font-light text-ink sm:text-muted hover:text-ink transition-colors duration-250"
 							>
 								<span className="shrink-0">{title}</span>
 								<span className="flex-1 border-b border-dashed" />
