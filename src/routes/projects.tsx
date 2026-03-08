@@ -12,6 +12,7 @@ interface Project {
 }
 
 const projects: Project[] = [
+	{ name: "Just Another Job Tracker", href: "https://www.justanotherjobtracker.com" },
 	{ name: "Solvify", href: "https://github.com/AfaqAnwar/solvify" },
 	{ name: "Introspection", href: "https://github.com/AfaqAnwar/introspection" },
 	{ name: "Money Manager", href: "https://github.com/AfaqAnwar/money-manager" },
