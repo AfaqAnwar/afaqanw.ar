@@ -76,7 +76,6 @@ function renderTokens(
 		if (isWord) {
 			const leading = visiblePart.startsWith(" ") ? " " : "";
 			const word = leading ? visiblePart.slice(1) : visiblePart;
-			const isPunct = /^[^\p{L}\p{N}]+$/u.test(word);
 			const color = TOKEN_COLORS[colorIndex % TOKEN_COLORS.length];
 			colorIndex++;
 
