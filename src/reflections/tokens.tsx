@@ -108,8 +108,7 @@ function renderTokens(
 							transition: isFading
 								? `background-color ${HIGHLIGHT_FADE_MS}ms ease`
 								: "none",
-							borderRadius: isPunct ? "2px" : "3px",
-							padding: isPunct ? "0" : "0 2px",
+							borderRadius: "2px",
 						}}
 					>
 						{chars}
@@ -262,7 +261,7 @@ function StreamOpening({ onFadeStart }: { onFadeStart: () => void }) {
 					{renderTokens(BODY_TOKENS, charsTyped, showHighlights, isFading, "b")}
 				</p>
 			)}
-			<div className="relative">
+			<div style={{ position: "relative", height: 0 }}>
 				<p
 					className="text-xs absolute top-0 left-0"
 					style={{
