@@ -275,12 +275,6 @@ function StreamOpening({ onFadeStart }: { onFadeStart: () => void }) {
 					{totalTokens} tokens — ${cost}
 				</p>
 			</div>
-			<style>{`
-				@keyframes char-fade-in {
-					from { opacity: 0; }
-					to { opacity: 1; }
-				}
-			`}</style>
 		</div>
 	);
 }
