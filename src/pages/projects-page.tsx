@@ -24,8 +24,9 @@ export function ProjectsPage() {
 			<section>
 				<p className="font-light">
 					Over the past few years I've gotten the opportunity to work alongside and learn
-					from some outstanding engineers. Even though I'm just getting started, the projects
-					I've gotten the opportunity to be a part of have provided priceless experience.
+					from some outstanding engineers. Even though I'm just getting started, the
+					projects I've gotten the opportunity to be a part of have provided priceless
+					experience.
 				</p>
 			</section>
 			<div className="block h-10" />
@@ -65,8 +66,9 @@ export function ProjectsPage() {
 				<div className="block h-2.5" />
 				<p className="font-light">
 					After my time with the accessibility team, I transitioned to the RxConnect
-					modernization project and began my career in front-end. We are currently rebuilding
-					the RxConnect platform, which is used by pharmacists daily, with React.
+					modernization project and began my career in front-end. We are currently
+					rebuilding the RxConnect platform, which is used by pharmacists daily, with
+					React.
 				</p>
 			</section>
 			<div className="block h-10" />
