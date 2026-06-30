@@ -1,9 +1,11 @@
 import { useParams } from "@tanstack/react-router";
 import type { ComponentType } from "react";
 import { Friction } from "../reflections/friction";
+import { Taste } from "../reflections/taste";
 import { Tokens } from "../reflections/tokens";
 
 const posts: Record<string, ComponentType> = {
+	taste: Taste,
 	friction: Friction,
 	tokens: Tokens,
 };

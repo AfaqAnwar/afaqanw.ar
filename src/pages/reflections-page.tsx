@@ -7,6 +7,7 @@ interface Reflection {
 }
 
 const reflections: Reflection[] = [
+	{ title: "Taste", slug: "taste", date: "2026-06-30" },
 	{ title: "Tokens", slug: "tokens", date: "2026-04-14" },
 	{ title: "Friction", slug: "friction", date: "2026-03-06" },
 ];
