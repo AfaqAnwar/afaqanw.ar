@@ -11,22 +11,23 @@ export function AboutPage() {
 			<div className="block h-10" />
 			<section>
 				<p className="font-light">
-					I'm a front-end software engineer working at{" "}
+					I'm a front-end software engineer at{" "}
 					<StyledLink
 						target="_blank"
 						href="https://www.cvs.com/"
 						rel="noopener noreferrer"
 					>
 						CVS
-					</StyledLink>{" "}
-					with React and TypeScript.
+					</StyledLink>
+					{""}, leading UI development with React and TypeScript.
 				</p>
+				<div className="block h-2.5" />
 				<p className="font-light">
 					Alongside web development I've also taken an interest in UX/UI design, developer
-					tooling and optimizing agentic workflows
+					tooling and optimizing agentic workflows.
 				</p>
 			</section>
-			<div className="block h-10" />
+			<div className="block h-5" />
 			<section>
 				<p className="font-light">
 					Since getting my first computer at age 7, I was fascinated with the power within
@@ -37,7 +38,7 @@ export function AboutPage() {
 					Science from New York Institute of Technology in 2023.
 				</p>
 			</section>
-			<div className="block h-10" />
+			<div className="block h-5" />
 			<section>
 				<p className="font-light">
 					If you want to know more about me, check out{" "}

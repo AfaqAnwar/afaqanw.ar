@@ -66,9 +66,13 @@ export function ProjectsPage() {
 				<div className="block h-2.5" />
 				<p className="font-light">
 					After my time with the accessibility team, I transitioned to the RxConnect
-					modernization project and began my career in front-end. We are currently
-					rebuilding the RxConnect platform, which is used by pharmacists daily, with
-					React.
+					modernization project and began my career in front-end development as one of the
+					three core contributors. I continue to help build and evolve the modernized
+					RxConnect platform, creating the foundation that other teams use to build new
+					experiences. Alongside this work, I have helped deliver key features, including
+					the modernized Prescriber experience, and now serve as the UI lead for
+					Immunizations. We are rebuilding RxConnect with React, modernizing a platform
+					used daily by pharmacists.
 				</p>
 			</section>
 			<div className="block h-10" />
